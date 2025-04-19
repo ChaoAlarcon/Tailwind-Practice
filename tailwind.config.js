@@ -1,10 +1,18 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
     content: [
-        "./src/**/*.{html,js}", // Adjust the paths to match your project structure
+        "./src/**/*.html", // Adjust the paths to match your project structure
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors:{
+                green: "#1DF299"
+            },
+
+            backgroundImage: {
+                circles: "url('/src/assets/circles.svg')",
+            }
+        },
     },
     plugins: [],
 };
