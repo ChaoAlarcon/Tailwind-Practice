@@ -5,4 +5,4 @@
 ---
 ### Notas:
 
--Aprender a usar el [tailwind.config.js](.\tailwind.config.js) para crear nuevos colores y elementos.
+-Aprender a usar el [tailwind.config.js](tailwind.config.js) para crear nuevos colores y elementos.
