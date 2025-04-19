@@ -15,6 +15,8 @@
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-xl: 1.25rem;
+    --text-xl--line-height: calc(1.75 / 1.25);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
@@ -174,8 +176,14 @@
   }
 }
 @layer utilities {
+  .my-8 {
+    margin-block: calc(var(--spacing) * 8);
+  }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
+  }
+  .my-40 {
+    margin-block: calc(var(--spacing) * 40);
   }
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
@@ -186,6 +194,12 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
+  .mb-5 {
+    margin-bottom: calc(var(--spacing) * 5);
+  }
+  .mb-28 {
+    margin-bottom: calc(var(--spacing) * 28);
+  }
   .flex {
     display: flex;
   }
@@ -195,8 +209,17 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-\[300px\] {
+    height: 300px;
+  }
   .h-\[400px\] {
     height: 400px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-\[600px\] {
+    height: 600px;
   }
   .h-screen {
     height: 100vh;
@@ -277,11 +300,50 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-\[url\(\'\.\/assets\/illustration-editor-desktop\.svg\'\)\] {
+    background-image: url('./assets/illustration-editor-desktop.svg');
+  }
+  .bg-\[url\(\'\.\/assets\/monachina\.jpg\'\)\] {
+    background-image: url('./assets/monachina.jpg');
+  }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-\[50\%\] {
+    background-position: 50%;
+  }
+  .bg-\[80\%\] {
+    background-position: 80%;
+  }
+  .bg-\[90\%\] {
+    background-position: 90%;
+  }
+  .bg-\[95\%\] {
+    background-position: 95%;
+  }
+  .bg-\[100\%\] {
+    background-position: 100%;
+  }
+  .bg-\[125\%\] {
+    background-position: 125%;
+  }
+  .bg-center {
+    background-position: center;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
   .p-4 {
     padding: calc(var(--spacing) * 4);
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-20 {
+    padding: calc(var(--spacing) * 20);
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -317,6 +379,10 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
