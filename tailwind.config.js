@@ -11,7 +11,12 @@ export default {
 
             backgroundImage: {
                 circles: "url('/src/assets/circles.svg')",
-            }
+            },
+
+            height: {
+                header: "400px",
+
+            },
         },
     },
     plugins: [],
